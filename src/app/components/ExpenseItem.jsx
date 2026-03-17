@@ -4,7 +4,6 @@ import useExpenseHook from "../hooks/useExpense.hook";
 export default function ExpenseItem({ expense }) {
   const { deleteExpense } = useExpenseHook();
 
-  console.log("Rendering ExpenseItem");
   return (
     <div className="bg-white p-4 rounded-lg shadow flex justify-between items-center">
 

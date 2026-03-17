@@ -6,7 +6,6 @@ import { useExpense } from "../context/useExpense.context";
 
 export default function CurrencyConverter() {
   const { expenses } = useExpense();
-  console.log("Rendering CurrencyConverter");
   const [currency, setCurrency] = useState("EUR")
   const [rate, setRate] = useState(null)
   const [loading, setLoading] = useState(false)

@@ -4,7 +4,6 @@ import { useState } from "react"
 import useExpenseHook from "../hooks/useExpense.hook";
 
 export default function ExpenseForm() {
-  console.log("Rendering ExpenseForm");
 
   const { addExpense } = useExpenseHook();
 

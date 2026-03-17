@@ -4,7 +4,6 @@ import { useExpense } from "../context/useExpense.context";
 export default function SummaryPanel() {
   const { expenses } = useExpense();
 
-  console.log("Rendering SummaryPanel");
   const total = expenses.reduce((sum, e) => sum + e.amount, 0)
 
   const breakdown = expenses.reduce((acc, e) => {

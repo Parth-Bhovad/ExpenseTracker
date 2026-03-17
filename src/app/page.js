@@ -4,17 +4,6 @@ import SummaryPanel from "./components/SummaryPanel"
 import CurrencyConverter from "./components/CurrencyConverter"
 
 export default function Home() {
-  console.log("Rendering Home page");
-  // const [expenses, setExpenses] = useState([])
-
-  // function addExpense(expense) {
-  //   setExpenses(prev => [...prev, expense])
-  // }
-
-  // function deleteExpense(id) {
-  //   setExpenses(prev => prev.filter(e => e.id !== id))
-  // }
-
   return (
     <main className="min-h-screen bg-gray-100 p-6">
 
