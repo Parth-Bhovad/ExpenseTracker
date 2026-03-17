@@ -17,9 +17,6 @@ export default function CurrencyConverter() {
   useEffect(() => {
 
     async function loadRate() {
-      if (expenses.length == 0) {
-        return
-      }
       try {
 
         setLoading(true)
@@ -41,7 +38,7 @@ export default function CurrencyConverter() {
 
     loadRate()
 
-  }, [currency, expenses])
+  }, [currency])
 
   const converted = rate ? (total * rate).toFixed(2) : null
 
